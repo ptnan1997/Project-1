@@ -54,8 +54,9 @@ form.addEventListener("submit", function (e) {
                 title: "Success Login in",
                 icon: "success",
                 draggable: true
-            }).then(() => window.location.href = "./pages/dashboard.html")
+            }).then(() => window.location.href = "./dashboard.html")
         }
     }
 })
+
 
