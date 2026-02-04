@@ -87,6 +87,7 @@ formLoginUp.addEventListener("submit", function (e) {
     icon: "success",
     draggable: true,
   }).then(() => {
-    window.location.href = "./sign-in.html";
+    window.location.href = "./pages/sign-in.html";
   });
 });
+
