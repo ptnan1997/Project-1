@@ -76,7 +76,8 @@ formLoginUp.addEventListener("submit", function (e) {
             icon: "success",
             draggable: true,
         }).then(()=>formLoginUp.submit())
-          .then(() =>window.location.href = "./pages/sign-in.html")
+          .then(() =>window.location.href = "./sign-in.html")
     }
 })
+
 
