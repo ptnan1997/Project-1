@@ -110,7 +110,7 @@ function renderUser() {
         let numberPage = document.getElementById("pagination-list");
         numberPage.innerHTML = `<a>Trang ${currentPage}</a>` ;
         let start = (currentPage - 1)*userPerPage;
-        let end = start + userPerPage;
+        let end = Math.min(start + userPerPage, users.length);
         tbody.innerHTML = '';
   //   in dữ liệu
   for (let i =start; i<end; i++){
@@ -145,7 +145,7 @@ function renderUser() {
         let numberPage = document.getElementById("pagination-list");
         numberPage.innerHTML = `<a>Trang ${currentPage}</a>` ;
         let start = (currentPage - 1)*userPerPage;
-        let end = start + userPerPage;
+        let end = Math.min(start + userPerPage, users.length);
         tbody.innerHTML = '';
   //   in dữ liệu
   for (let i =start; i<end; i++){
@@ -219,7 +219,7 @@ console.log(findFilter);
   let currentPage = 1;
   let userPerPage = 5;
   let start = (currentPage - 1)*userPerPage;
-  let end = start + userPerPage;
+  let let end = Math.min(start + userPerPage, users.length);
   let pagination = document.getElementById("pagination");
   let totalPage = Math.ceil(findFilter.length/userPerPage);
   pagination.addEventListener("click",function(e){
@@ -266,7 +266,7 @@ console.log(findFilter);
         let numberPage = document.getElementById("pagination-list");
         numberPage.innerHTML = `<a>${currentPage}</a>` ;
         let start = (currentPage - 1)*userPerPage;
-        let end = start + userPerPage;
+        let end = Math.min(start + userPerPage, users.length);
         tbody.innerHTML = '';
   //   in dữ liệu
   for (let i =start; i<end; i++){
@@ -334,3 +334,4 @@ console.log(findFilter);
 //  back = trang hiẹn tại có lớn 1 hay ko
 
  
+
