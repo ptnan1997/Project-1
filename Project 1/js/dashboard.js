@@ -69,7 +69,7 @@ tbody.addEventListener('click', function (e) {
           localStorage.setItem("findEdit",JSON.stringify(findEdit))
           renderUser();
           localStorage.setItem("users", JSON.stringify(users));
-          window.location.href = "./pages/edit-user.html"
+          window.location.href = "./edit-user.html"
         })
       }
     });
@@ -334,5 +334,6 @@ console.log(findFilter);
 //  back = trang hiẹn tại có lớn 1 hay ko
 
  
+
 
 
