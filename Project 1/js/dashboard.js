@@ -69,7 +69,7 @@ tbody.addEventListener('click', function (e) {
           localStorage.setItem("findEdit",JSON.stringify(findEdit))
           renderUser();
           localStorage.setItem("users", JSON.stringify(users));
-          window.location.href = "/pages/edit-user.html"
+          window.location.href = "./pages/edit-user.html"
         })
       }
     });
@@ -332,4 +332,5 @@ console.log(findFilter);
 // B3 TÌm vị trí kết thúc hiển thị (tạm gọi là end) end = start + user per page
 //  B4 số tổng trang = tổng số phần tử chia cho userperpage (lấy làm tròn lên)
 //  back = trang hiẹn tại có lớn 1 hay ko
+
  
